@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Country.css'
 export default
-    function Country({ country }) {
+    function Country({ country, handleVisitedCountries, handleVisitedFlags }) {
     const { name, flags, population, area, languages, cca3 } = country;
 
     const [visited, setVisited] = useState(false);
@@ -19,6 +19,10 @@ export default
             <p>language: {languages?.ara}</p>
             <p><small>code: {cca3}</small></p>
 
+            <button className='btn' onClick={() => { handleVisitedCountries(country) }}>Mark Visited</button>
+            <hr />
+            <button className='btn' onClick={() => handleVisitedFlags(country.flags.png)}>Add Visited Flag</button>
+            <hr />
             <button className='btn' onClick={handleVisited}>{visited ? "visited" : "Going"}</button>
             {visited ? '  you have already visited!!!' : '  you should visit.'}
         </div>
