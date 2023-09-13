@@ -10,6 +10,7 @@ const Countries = () => {
             .then(res => res.json())
             .then(data => setCountries(data))
     }, [])
+
     return (
         <div>
             <h1>hello show all countries</h1>

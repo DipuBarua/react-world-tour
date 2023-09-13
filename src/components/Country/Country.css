@@ -3,4 +3,18 @@
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+    max-width: min-content;
+    max-height: min-content;
 }
+.visited{
+background-color: aquamarine;
+}
+.btn{
+    background: darkblue;
+    color: white;
+    
+}
+.btn:hover{
+    background: red;
+    color: black;
+} 
