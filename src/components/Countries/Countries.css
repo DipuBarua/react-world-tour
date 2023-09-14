@@ -4,6 +4,12 @@
     gap: 10px;
 }
 
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+}
+
 .flag-container img{
     margin: 10px;
     width: 60px;
