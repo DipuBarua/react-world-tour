@@ -42,7 +42,8 @@ const Countries = () => {
 
             <div className="flag-container">
                 {
-                    visitedFlags.map(flag => <img src={flag} alt="" />)
+                    visitedFlags.map((flag,idx) => <img key={idx} src={flag} alt="" />)
+                // to fixed key error: used index in map.
                 }
             </div>
 
