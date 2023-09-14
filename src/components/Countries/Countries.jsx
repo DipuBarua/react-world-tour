@@ -28,7 +28,7 @@ const Countries = () => {
 
     return (
         <div>
-            <h1>Awesome REACT World Tour</h1>
+            <h1>Awesome REACT World Tour.</h1>
             <h2>countries: {countries.length}</h2>
 
             <div>
